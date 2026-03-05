@@ -1,3 +1,56 @@
+#dashboard {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+.user-card {
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	border: 1px solid #eee;
+	transition:
+		transform 0.2s,
+		box-shadow 0.2s;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.user-card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.user-card h3 {
+	margin-top: 0;
+	color: #333;
+	font-size: 1.4rem;
+}
+
+.user-card p {
+	color: #666;
+	margin: 5px 0;
+	font-size: 0.95rem;
+}
+.delete-btn {
+	margin-top: 15px;
+	background-color: #ff4757;
+	color: white;
+	border: none;
+	padding: 10px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-weight: bold;
+	transition: background 0.3s;
+}
+
+.delete-btn:hover {
+	background-color: #ff6b81;
+}
+
 .loadStatus {
-	color: gray;
+	color: #2f3542;
 }
